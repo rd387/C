@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int i,t;
+	char q;
+do {
+	
+	do {
+	printf("Please input a postive integer value: \n");
+	scanf("%d", &i);
+	fflush(stdin);
+	} while(i<=0);
+  	
+	printf("Input a task number: \n 1. Write a C program that prints out all numbers between 1 and n. \n 2. Write a C program that prints out all letters of the alphabet. \n 3. Write a C program that prints out all odd numbers between 1 and n in reverse order.\n4. Write a C program that prints out the individual digits of an integer number and calculates their sum.\n 5. Write a C program that checks whether a number is prime. \n 6.Write a C program that prints out all factors of a number. \n 7.Write a C program that checks whether a number is perfect. (hint: a number is said to be
+    perfect when it is equal to the sum of its proper divisors, e.g. 6 = 1 + 2 + 3) \n");
+     scanf("%d", &t);
+     fflush(stdin);
+	
+	switch(t)
+	case 1: 
+	{
+		for(int n; i<n; i++) printf("%d ", i)
+		break;
+	}
+	case 2: 
+	{
+		char L[26]={'a','b','c','d','e','f','g','h','i','j','k','l',
+		'm','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+		if(i>26) i=26;
+			
+		for(int n=0;n<i;n++)
+		{
+			printf('%c', L[n]);
+		} 
+		break;
+	}
+	case 3:
+	{
+		for(int n=1;n<=i;n+=2)
+		{
+			printf("%d", n);
+		}
+		break;
+	}
+/*	case 4:
+	{ int n,a,b,c,d;
+		do { 
+			
+		} while (x!=0);
+		break;
+	}
+	*/
+	
+ printf("If you wish to quit, press Q")
+ scanf("%c", &q);
+ fflush(stdin);
+    } while(c!='Q'||c!='q')
+
+return 0;
+}
